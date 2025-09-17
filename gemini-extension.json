@@ -1,0 +1,16 @@
+{
+  "name": "cloud-sql-postgresql-observability",
+  "version": "0.1.0",
+  "description": "Manage and monitor database performance and health for Cloud SQL for PostgreSQL databases.",
+  "mcpServers": {
+    "Cloud SQL for PostgreSQL": {
+      "command": "${extensionPath}${/}toolbox",
+      "args": [
+        "--prebuilt",
+        "cloud-sql-postgres-observability",
+        "--stdio"
+      ]
+    }
+  },
+  "contextFileName": "CLOUD-SQL-POSTGRESQL-OBSERVABILITY.md"
+}
