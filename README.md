@@ -26,6 +26,10 @@ To install the extension, use the command:
 gemini extensions install github.com/gemini-cli-extensions/cloud-sql-postgresql-observability
 ```
 
+## Configuration
+
+No configuration is required.
+
 ## Usage Examples
 
 Interact with Cloud Monitoring metrics using natural language right from your IDE:
