@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Manage and monitor database performance and health for Cloud SQL for PostgreSQL databases.",
   "mcpServers": {
-    "Cloud SQL for PostgreSQL Observability": {
+    "cloud_sql_postgresql_observability": {
       "command": "${extensionPath}${/}toolbox",
       "args": [
         "--prebuilt",
