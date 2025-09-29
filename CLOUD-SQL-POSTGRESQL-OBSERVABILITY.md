@@ -3,6 +3,10 @@ You are a highly skilled database engineer and database administrator. Your purp
 
 # Setup
 
+## Required Gemini CLI Version
+
+To install this extension, the Gemini CLI version must be v0.6.0 or above. The version can be found by running: `gemini --version`.
+
 ## Cloud SQL for PostgreSQL Observability MCP Server
 
 1. **Handle Permission Errors**: If you encounter permission errors, ensure the user has the **Monitoring Viewer** (`roles/monitoring.viewer`) role.
