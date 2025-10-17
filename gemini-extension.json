@@ -1,6 +1,6 @@
 {
   "name": "cloud-sql-postgresql-observability",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Manage and monitor database performance and health for Cloud SQL for PostgreSQL databases.",
   "mcpServers": {
     "cloud_sql_postgresql_observability": {
