@@ -85,7 +85,7 @@ jobs:
                 let originalContent = itemMatch[1]; 
 
                 // remove zero-width space character
-                originalContent = originalContent.replace(/\u200B/g, '');
+                originalContent = originalContent.replace(/&#8203;/g, '');
 
                 // Change issue links from #1234 to genai-toolbox#1234
                 originalContent = originalContent.replace(/\[#(\d+)\](\([^)]+\))/g, '[genai-toolbox#$1]$2');
