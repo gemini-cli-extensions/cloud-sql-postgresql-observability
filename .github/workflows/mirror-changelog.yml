@@ -86,6 +86,9 @@ jobs:
 
                 // remove zero-width space character
                 originalContent = originalContent.replace(/\u200B/g, '');
+
+                // Change issue links from #1234 to genai-toolbox#1234
+                originalContent = originalContent.replace(/\[#(\d+)\](\([^)]+\))/g, '[genai-toolbox#$1]$2');
                 const lineAsLowerCase = originalContent.toLowerCase();
 
                 const hasPrefix = prefixesToFilter.some(prefix => lineAsLowerCase.includes(prefix));
