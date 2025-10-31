@@ -21,7 +21,7 @@ on:
 
 jobs:
   add-release-notes:
-    if: github.actor == 'twishabansal'
+    if: github.actor == 'twishabansal' && startsWith(github.head_ref, 'test-workflow')
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -83,7 +83,13 @@ jobs:
               // Match and extract changelog item
               const itemMatch = trimmedLine.match(/^[*-]\s(.*)$/);
               if (itemMatch) {
-                const originalContent = itemMatch[1]; 
+                let originalContent = itemMatch[1]; 
+
+                // remove zero-width space character
+                originalContent = originalContent.replace(/\u200B/g, '');
+
+                // Change issue links from #1234 to genai-toolbox#1234
+                originalContent = originalContent.replace(/\[#(\d+)\](\([^)]+\))/g, '[genai-toolbox#$1]$2');
                 const lineAsLowerCase = originalContent.toLowerCase();
 
                 const hasPrefix = prefixesToFilter.some(prefix => lineAsLowerCase.includes(prefix));
