@@ -88,7 +88,7 @@ jobs:
                 originalContent = originalContent.replace(/&#8203;/g, '');
 
                 // Change issue links from #1234 to genai-toolbox#1234
-                originalContent = originalContent.replace(/\[#(\d+)\](\([^)]+\))/g, '[genai-toolbox#$1]$2');
+                originalContent = originalContent.replace(/\[#(\d+)\](\([^)]+\))/g, '[genai-toolbox&#35;$1]$2');
                 const lineAsLowerCase = originalContent.toLowerCase();
 
                 const hasPrefix = prefixesToFilter.some(prefix => lineAsLowerCase.includes(prefix));
