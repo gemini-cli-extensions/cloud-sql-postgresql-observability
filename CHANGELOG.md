@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/compare/0.1.2...0.1.3) (2026-01-28)
+
+
+### Features
+
+* **deps:** update dependency googleapis/genai-toolbox to v0.25.0 ([#61](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/issues/61)) ([109ca4a](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/commit/109ca4ab81aa03cff2ec54e7b08969a2ec24f987))
+* **deps:** update dependency googleapis/genai-toolbox to v0.26.0 ([#64](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/issues/64)) ([5ee0c2c](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/commit/5ee0c2c221d6912b08833e2097921255fa3a2b20))
+
 ## [0.1.2](https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability/compare/0.1.1...0.1.2) (2025-10-17)
 
 
